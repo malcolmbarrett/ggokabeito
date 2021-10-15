@@ -4,3 +4,5 @@
 .httr-oauth
 .DS_Store
 docs
+R/rhub.R
+rhub.R
