@@ -1,13 +1,20 @@
 Package: ggokabeito
-Title: What the Package Does (One Line, Title Case)
+Title: 'ggplot2' Scales for Okabe Ito
 Version: 0.0.0.9000
 Authors@R: 
     person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0299-5825"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
+URL: https://github.com/malcolmbarrett/ggokabeito
+BugReports: https://github.com/malcolmbarrett/ggokabeito/issues
+Depends: 
+    R (>= 4.0.0)
+Imports: 
+    ggplot2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-URL: https://github.com/malcolmbarrett/ggokabeito
-BugReports: https://github.com/malcolmbarrett/ggokabeito/issues
