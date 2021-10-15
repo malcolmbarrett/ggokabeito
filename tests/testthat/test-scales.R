@@ -21,6 +21,7 @@ test_that("ggplot2 scales work", {
 test_that("ggraph scales work", {
   skip_if_not_installed("ggraph")
   skip_if_not_installed("igraph")
+  skip_on_ci()
 
   # example from https://www.data-imaginist.com/2017/ggraph-introduction-edges/
   library(ggplot2, warn.conflicts = FALSE)
