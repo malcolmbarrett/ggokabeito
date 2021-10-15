@@ -10,3 +10,4 @@
 ^CODE_OF_CONDUCT\.md$
 ^cran-comments\.md$
 ^rhub\.R$
+^CRAN-RELEASE$
