@@ -32,7 +32,7 @@ scale_okabe_ito <- function(aesthetics, order = 1:9, alpha = 1, ...) {
   pal <- function(n) {
     if (n > length(values)) {
       msg <- paste(
-        "Insufficient values in manual scale.", n, "needed but only ",
+        "Insufficient values in manual scale.", n, "needed but only",
         length(values), "provided."
       )
       stop(msg, call. = FALSE)

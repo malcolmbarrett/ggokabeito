@@ -13,6 +13,15 @@ test_that("ggplot2 scales work", {
     scale_fill_okabe_ito(name = "Class", alpha = .9) +
     scale_color_okabe_ito(name = "Class")
 
+  p4 <- ggplot(mpg, aes(cty, hwy, color = factor(model))) +
+    geom_point() +
+    scale_color_okabe_ito()
+
+  expect_error(
+    print(p4),
+    "Insufficient values in manual scale. 38 needed but only 9 provided."
+  )
+
   expect_doppelganger("Scale color", p1)
   expect_doppelganger("Scale color with alpha and name", p2)
   expect_doppelganger("Scale f+c, color alpha, joint name", p3)
