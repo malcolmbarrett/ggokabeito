@@ -1,7 +1,7 @@
 #' Okabe-Ito Scales for ggplot2 and ggraph
 #'
 #' Discrete scales for the colorblind-friendly Okabe-Ito palette, including
-#' `color`, `fill`, `edge_colour`, and `edge_fill`. See [palette_okabe_ito] for
+#' `color`, `fill`, and `edge_colour`. See [palette_okabe_ito] for
 #' details.
 #'
 #' @inheritParams ggplot2::discrete_scale
@@ -89,16 +89,4 @@ scale_edge_colour_okabe_ito <- function(aesthetics = "edge_colour", order = 1:9,
 #' @export
 #' @name scale_okabe_ito
 scale_edge_color_okabe_ito <- scale_edge_colour_okabe_ito
-
-#' @export
-#' @name scale_okabe_ito
-scale_edge_fill_okabe_ito <- function(aesthetics = "edge_fill", order = 1:9, alpha = NULL, ...) {
-  scale_okabe_ito(
-    aesthetics = aesthetics,
-    order = order,
-    alpha = alpha,
-    ...
-  )
-}
-
 

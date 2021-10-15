@@ -7,7 +7,6 @@
 \alias{scale_fill_okabe_ito}
 \alias{scale_edge_colour_okabe_ito}
 \alias{scale_edge_color_okabe_ito}
-\alias{scale_edge_fill_okabe_ito}
 \title{Okabe-Ito Scales for ggplot2 and ggraph}
 \usage{
 scale_okabe_ito(aesthetics, order = 1:9, alpha = 1, ...)
@@ -31,13 +30,6 @@ scale_edge_color_okabe_ito(
   alpha = NULL,
   ...
 )
-
-scale_edge_fill_okabe_ito(
-  aesthetics = "edge_fill",
-  order = 1:9,
-  alpha = NULL,
-  ...
-)
 }
 \arguments{
 \item{aesthetics}{The names of the aesthetics that this scale works with.}
@@ -54,7 +46,7 @@ A ggplot or ggraph scale
 }
 \description{
 Discrete scales for the colorblind-friendly Okabe-Ito palette, including
-\code{color}, \code{fill}, \code{edge_colour}, and \code{edge_fill}. See \link{palette_okabe_ito} for
+\code{color}, \code{fill}, and \code{edge_colour}. See \link{palette_okabe_ito} for
 details.
 }
 \examples{
