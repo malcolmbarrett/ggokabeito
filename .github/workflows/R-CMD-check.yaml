@@ -52,7 +52,7 @@ jobs:
             eval sudo $cmd
           done < <(Rscript -e 'writeLines(remotes::system_requirements("ubuntu", "20.04"))')
 
-      - name: Install remotes package
+      - name: Install igraph package
         run: install.packages('igraph', type = "binary")
         shell: Rscript {0}
 
