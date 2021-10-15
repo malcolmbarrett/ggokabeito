@@ -52,6 +52,10 @@ jobs:
             eval sudo $cmd
           done < <(Rscript -e 'writeLines(remotes::system_requirements("ubuntu", "20.04"))')
 
+      - name: Install remotes package
+        run: install.packages('igraph', type = "binary")
+        shell: Rscript {0}
+
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
           extra-packages: rcmdcheck
