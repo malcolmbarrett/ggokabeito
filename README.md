@@ -57,3 +57,10 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+
+## Code of Conduct
+
+Please note that the ggokabeito project is released with a [Contributor
+Code of
+Conduct](https://malcolmbarrett.github.io/ggokabeito/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
