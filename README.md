@@ -24,7 +24,13 @@ visualizations. Currently, ggokabeito provides the following scales:
 
 ## Installation
 
-You can install the development version of ggokabeito from
+You can install ggokabeito from CRAN with:
+
+``` r
+install.packages("ggokabeito")
+```
+
+You can alternatively install the development version of ggokabeito from
 [GitHub](https://github.com/) with:
 
 ``` r

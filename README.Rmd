@@ -36,7 +36,13 @@ ggokabeito provides ggplot2 and ggraph scales to easily use the discrete, colorb
 
 ## Installation
 
-You can install the development version of ggokabeito from [GitHub](https://github.com/) with:
+You can install ggokabeito from CRAN with:
+
+``` r
+install.packages("ggokabeito")
+```
+
+You can alternatively install the development version of ggokabeito from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
