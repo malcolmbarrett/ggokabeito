@@ -18,7 +18,7 @@ test_that("ggplot2 scales work", {
     scale_color_okabe_ito()
 
   expect_error(
-    print(p4),
+    ggplot_build(p4),
     "Insufficient values in manual scale. 38 needed but only 9 provided."
   )
 
