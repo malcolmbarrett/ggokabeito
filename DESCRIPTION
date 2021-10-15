@@ -10,7 +10,7 @@ Description: Discrete scales for the colorblind-friendly 'Okabe-Ito'
     palette in your data visualizations.
 License: MIT + file LICENSE
 URL: https://github.com/malcolmbarrett/ggokabeito,
-    https://malcolmbarrett.github.io/ggokabeito
+    https://malcolmbarrett.github.io/ggokabeito/
 BugReports: https://github.com/malcolmbarrett/ggokabeito/issues
 Depends: 
     R (>= 4.0.0)

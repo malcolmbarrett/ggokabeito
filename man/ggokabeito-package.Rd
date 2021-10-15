@@ -4,7 +4,7 @@
 \name{ggokabeito-package}
 \alias{ggokabeito}
 \alias{ggokabeito-package}
-\title{ggokabeito: Okabe-Ito Scales for 'ggplot2' and 'ggraph'}
+\title{ggokabeito: 'Okabe-Ito' Scales for 'ggplot2' and 'ggraph'}
 \description{
 Discrete scales for the colorblind-friendly 'Okabe-Ito' palette, including 'color', 'fill', and 'edge_colour'. 'ggokabeito' provides 'ggplot2' and 'ggraph' scales to easily use the 'Okabe-Ito' palette in your data visualizations.
 }
@@ -12,7 +12,7 @@ Discrete scales for the colorblind-friendly 'Okabe-Ito' palette, including 'colo
 Useful links:
 \itemize{
   \item \url{https://github.com/malcolmbarrett/ggokabeito}
-  \item \url{https://malcolmbarrett.github.io/ggokabeito}
+  \item \url{https://malcolmbarrett.github.io/ggokabeito/}
   \item Report bugs at \url{https://github.com/malcolmbarrett/ggokabeito/issues}
 }
 
