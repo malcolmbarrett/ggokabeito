@@ -4,6 +4,10 @@
 # ggokabeito
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/malcolmbarrett/ggokabeito/workflows/R-CMD-check/badge.svg)](https://github.com/malcolmbarrett/ggokabeito/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/malcolmbarrett/ggokabeito/branch/main/graph/badge.svg)](https://app.codecov.io/gh/malcolmbarrett/ggokabeito?branch=main)
 <!-- badges: end -->
 
 The goal of ggokabeito is to …
