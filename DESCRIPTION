@@ -1,19 +1,25 @@
 Package: ggokabeito
-Title: 'ggplot2' Scales for Okabe Ito
+Title: Okabe-Ito Scales for 'ggplot2' and 'ggraph'
 Version: 0.0.0.9000
 Authors@R: 
     person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0299-5825"))
-Description: What the package does (one paragraph).
+Description: Discrete scales for the colorblind-friendly 'Okabe-Ito'
+    palette, including 'color', 'fill', 'edge_colour', and 'edge_fill'. 
+    'ggokabeito' provides 'ggplot2' and 'ggraph' scales to easily use the 
+    'Okabe-Ito' palette in your data visualizations.
 License: MIT + file LICENSE
 URL: https://github.com/malcolmbarrett/ggokabeito
 BugReports: https://github.com/malcolmbarrett/ggokabeito/issues
 Depends: 
     R (>= 4.0.0)
 Imports: 
-    ggplot2
+    ggplot2,
+    grDevices
 Suggests: 
-    testthat (>= 3.0.0)
+    ggraph,
+    testthat (>= 3.0.0),
+    vdiffr
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
