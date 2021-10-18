@@ -1,6 +1,6 @@
 Package: ggokabeito
 Title: 'Okabe-Ito' Scales for 'ggplot2' and 'ggraph'
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: 
     person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0299-5825"))
