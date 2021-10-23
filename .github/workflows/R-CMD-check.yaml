@@ -44,7 +44,7 @@ jobs:
         run: install.packages('remotes')
         shell: Rscript {0}
 
-      - name: Install igraph package
+      - name: Install igraph binary
         if: runner.os != 'Linux'
         run: install.packages('igraph', type = 'binary')
         shell: Rscript {0}
