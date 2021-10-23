@@ -45,6 +45,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Install igraph package
+        if: runner.os != 'Linux'
         run: install.packages('igraph', type = 'binary')
         shell: Rscript {0}
 
