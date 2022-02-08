@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-10-23T15:57Z
+last_built: 2022-02-08T17:54Z
 urls:
   reference: https://malcolmbarrett.github.io/ggokabeito/reference
   article: https://malcolmbarrett.github.io/ggokabeito/articles
