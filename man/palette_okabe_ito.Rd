@@ -7,7 +7,11 @@
 palette_okabe_ito(order = 1:9, alpha = NULL, recycle = FALSE)
 }
 \arguments{
-\item{order}{A numeric vector, the order of the colors}
+\item{order}{A numeric vector, the order of the colors, or a character vector
+of color names, of: "black", "orange", "skyblue", "bluishgreen", "yellow",
+"blue", "vermillion", "reddishpurple", "gray". If \code{alpha} is not \code{NULL},
+you must use an integer vector since the colors are not returned with
+names.}
 
 \item{alpha}{an alpha-transparency level in the range [0,1]
     (0 means transparent and 1 means opaque).}
@@ -31,4 +35,6 @@ instead of the first, as in \code{palette.colors()}.
 palette_okabe_ito()
 
 palette_okabe_ito(order = c(2, 3, 5), alpha = 0.9)
+
+palette_okabe_ito(order = c("bluishgreen", "yellow", "blue"))
 }

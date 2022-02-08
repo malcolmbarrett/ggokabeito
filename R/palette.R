@@ -6,7 +6,11 @@
 #' the last color returned by `palette_okabe_ito()` when 9 colors are needed
 #' instead of the first, as in `palette.colors()`.
 #'
-#' @param order A numeric vector, the order of the colors
+#' @param order A numeric vector, the order of the colors, or a character vector
+#'   of color names, of: "black", "orange", "skyblue", "bluishgreen", "yellow",
+#'   "blue", "vermillion", "reddishpurple", "gray". If `alpha` is not `NULL`,
+#'   you must use an integer vector since the colors are not returned with
+#'   names.
 #' @inheritParams grDevices::palette.colors
 #'
 #' @return A character vector of hex codes
@@ -17,8 +21,10 @@
 #' palette_okabe_ito()
 #'
 #' palette_okabe_ito(order = c(2, 3, 5), alpha = 0.9)
+#'
+#' palette_okabe_ito(order = c("bluishgreen", "yellow", "blue"))
 palette_okabe_ito <- function(order = 1:9, alpha = NULL, recycle = FALSE) {
-  stopifnot(is.numeric(order), all(order > 0))
+  check_order(order, alpha)
   if (!is.null(alpha)) {
     stopifnot(is.numeric(alpha), alpha >= 0, alpha <= 1)
   }
@@ -27,10 +33,37 @@ palette_okabe_ito <- function(order = 1:9, alpha = NULL, recycle = FALSE) {
   palette_colors(
     palette = "Okabe-Ito",
     alpha = alpha,
-    recycle = recycle
-  )[order]
+    recycle = recycle,
+    order = order
+  )
 }
 
-palette_colors <- function(...) {
-  unname(palette.colors(n = 9, ...)[c(2:9, 1)])
+check_order <- function(order, alpha) {
+  if (is.numeric(order) && all(order > 0)) {
+    return(invisible())
+  } else if (is.character(order) && all(order %in% color_names())) {
+    if (!is.null(alpha)) {
+      stop(
+        "Cannot use color names for `order` when specifying `alpha`",
+        call. = FALSE
+      )
+    }
+    return(invisible())
+  } else {
+    stop(
+      "`order` must be an integer vector (1-9) or ",
+      "a character vector of color names (of: ",
+      paste(color_names(), collapse = ", "),
+      ")",
+       call. = FALSE
+    )
+  }
+}
+
+palette_colors <- function(..., order = 1:9) {
+  unname(palette.colors(n = 9, ...)[c(2:9, 1)][order])
+}
+
+color_names <- function() {
+  names(palette.colors(n = 9))
 }

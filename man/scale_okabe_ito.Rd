@@ -34,7 +34,11 @@ scale_edge_color_okabe_ito(
 \arguments{
 \item{aesthetics}{The names of the aesthetics that this scale works with.}
 
-\item{order}{A numeric vector, the order of the colors}
+\item{order}{A numeric vector, the order of the colors, or a character vector
+of color names, of: "black", "orange", "skyblue", "bluishgreen", "yellow",
+"blue", "vermillion", "reddishpurple", "gray". If \code{alpha} is not \code{NULL},
+you must use an integer vector since the colors are not returned with
+names.}
 
 \item{alpha}{an alpha-transparency level in the range [0,1]
     (0 means transparent and 1 means opaque).}
