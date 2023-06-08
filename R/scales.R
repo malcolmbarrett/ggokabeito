@@ -7,7 +7,7 @@
 #' @inheritParams ggplot2::discrete_scale
 #' @inheritParams palette_okabe_ito
 #' @inheritParams grDevices::palette.colors
-#' @param ... Additonal arguments passed to [ggplot2::discrete_scale()]
+#' @param ... Additional arguments passed to [ggplot2::discrete_scale()]
 #'
 #' @return A ggplot or ggraph scale
 #' @export
